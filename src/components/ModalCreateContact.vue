@@ -263,16 +263,29 @@ label {
   color: #2a2d3b;
 }
 
-input {
-  border: 1px solid #c0c3d2;
-  height: 32px;
+.form-control {
+  border: 0;
+  border-bottom: 1px solid #efeeed;
+  height: 32px !important;
+  color: #efeeed ;
+  border-radius: 0;
 
-  &.is-invalid {
-    color: #dc3545;
+  &:placeholder {
+    color: #efeeed ;
   }
 
   &.is-valid {
-    color: #28a745;
+    color: #00c8b3;
+    border-bottom: 1px solid #00c8b3;
+  }
+
+  &.is-invalid {
+    color: #eb4a46;
+     border-bottom: 1px solid #eb4a46;
+  }
+
+  &:focus {
+    color: #333333;
   }
 }
 

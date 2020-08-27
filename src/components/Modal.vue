@@ -64,26 +64,28 @@ export default {
         }
 
         .btn-primary {
-          background-color: #fa7268;
-          color: #ffffff;
-          @include formatText(14px, 500);
-          width: 72px;
-          height: 32px;
-          border-radius: 16px;
+          width: 100px;
+          height: 30px;
+          border-radius: 20px;
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
           border: solid 1px rgba(255, 255, 255, 0.16);
+          background-color: #00c8b3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+          @include formatText(14px, 500);
 
-          &:focus, &:active {
-            background-color: #fa7268;
-            color: #ffffff;
+          &:focus, &:active, &:hover {
+            opacity: 0.7;
             outline: none !important;
             border: 0;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16) !important;
-            border: solid 1px rgba(255, 255, 255, 0.16);
           }
 
           &:disabled {
-            opacity: 0.32;
+            color: #dddcdc;
+            background: #f6f6f6;
           }
         }
       }
