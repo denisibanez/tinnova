@@ -1,0 +1,26 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+input, button {
+  outline:  none !important;
+
+  &:focus, &:active, &:focus {
+    outline:  none !important;
+    box-shadow: none !important;
+  }
+}
+
+.create-contact-wrapper {
+  background-color: #f8f9fd;
+  min-height: 100vh;
+}
+
+@mixin formatText($size, $weight) {
+  font-family: Roboto;
+  font-size: $size;
+  font-weight: $weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
