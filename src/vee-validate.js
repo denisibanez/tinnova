@@ -29,6 +29,13 @@ extend('maskedPhone', {
   message: 'Insira um telefone válido'
 })
 
+extend('cpfCheck', {
+  validate: function ($event) {
+    const regex = /^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$/
+    return regex.test($event)
+  },
+  message: 'Insira um cpf válido'
+})
 
 localize({
   en: {

@@ -54,7 +54,7 @@
         <b-row class="my-1">
           <ValidationProvider
             v-slot="{ errors, valid, touched }"
-            :rules="'required'"
+            :rules="'cpfCheck|required'"
             name="document"
             :state="valid"
           >
@@ -64,6 +64,7 @@
                 id="document"
                 type="text"
                 v-model="form.document.text"
+                v-mask="'###.###.###-##'"
                 :state="touched ? valid : null">
               </b-form-input>
             </b-col>
