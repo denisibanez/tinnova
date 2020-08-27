@@ -29,11 +29,11 @@ npm run build --report
 ## Developing
 
 ### Built With
-"axios": "^0.19.2",
-"bootstrap": "^4.5.2",
-"bootstrap-vue": "^2.16.0",
-"vee-validate": "^3.3.9",
-"vue": "^2.5.2",
-"vue-router": "^3.0.1",
-"vue-the-mask": "^0.11.1",
-"vuex": "^3.1.3"
+- "axios": "^0.19.2",
+- "bootstrap": "^4.5.2",
+- "bootstrap-vue": "^2.16.0",
+- "vee-validate": "^3.3.9",
+- "vue": "^2.5.2",
+- "vue-router": "^3.0.1",
+- "vue-the-mask": "^0.11.1",
+- "vuex": "^3.1.3"
